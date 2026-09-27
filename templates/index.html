@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'style/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'style/media.css') }}"
+    />
+    <title>LaEle's Weather</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h2 class="logo">LaEle's Weather</h2>
+        <nav>
+          <input type="text" id="nomecidade" placeholder="Nome da Cidade" />
+          <button id="botaomostrar">Ver</button>
+          <button id="mododark">Tema</button>
+        </nav>
+      </header>
+      <main>
+        <section id="principalclima">
+          <h1>Clima em <span id="lugar"></span></h1>
+          <div id="infoprincipal">
+            <span id="temperatura">XX°C</span>
+            <p id="descricao">XX</p>
+            <img
+              src="../static/imagens/limpo-noite.svg"
+              alt="descricaoimg"
+              id="icone"
+            />
+            <span id="hora">XX:XX</span>
+          </div>
+          <div id="infospontuais">
+            <p id="vento">XX%</p>
+            <p id="umidade">XX%</p>
+            <p id="chuva">XX%</p>
+          </div>
+          <div id="infos"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="{{ url_for('static', filename = 'script/script.js') }}"></script>
+  </body>
+</html>

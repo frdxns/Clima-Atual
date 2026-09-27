@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+:root {
+  --fonteprincipal: Arial;
+  --fontesecundaria: Verdana;
+
+  --corprincipal: rgb(55, 103, 214);
+  --cortexto: rgb(14, 14, 14);
+  --corfundo: rgb(248, 248, 248);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dark {
+  --corprincipal: rgb(86, 129, 232);
+  --corfundo: rgb(14, 14, 14);
+  --cortexto: rgb(248, 248, 248);
+}
+
+body {
+  color: var(--cortexto);
+  background-color: var(--corfundo);
+  font-family: var(--fonteprincipal);
+}
+
+header {
+  display: flex;
+  background-color: var(--corprincipal);
+  color: var(--corfundo);
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+header input,
+button {
+  font-size: 16px;
+}
+
+#icone {
+  width: 25px;
+  height: 25px;
+}
